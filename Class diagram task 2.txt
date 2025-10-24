@@ -1,0 +1,29 @@
++----------------------------------------+
+|         TrafficLightSystem             |
++----------------------------------------+
+| - carRed: int                          |
+| - carYellow: int                       |
+| - carGreen: int                        |
+| - pedRed: int                          |
+| - pedGreen: int                        |
+| - buttonPin: int                       |
+| - currentState: State                  |
+| - lastStateChange: unsigned long       |
+| - pedRequest: bool                     |
++----------------------------------------+
+| + setup(): void                        |
+| + loop(): void                         |
+| + setCarLights(r, y, g): void          |
+| + setPedLights(r, g): void             |
++----------------------------------------+
+
+        ┌─────────────────────────┐
+        │        <<enum>>         │
+        │         State           │
+        ├─────────────────────────┤
+        │ CAR_GREEN               │
+        │ CAR_YELLOW              │
+        │ CAR_RED                 │
+        │ CAR_RED_YELLOW          │
+        │ PED_GREEN               │
+        └─────────────────────────┘
